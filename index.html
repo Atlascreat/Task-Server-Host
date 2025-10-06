@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Task - Hébergement de Serveurs de Jeu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>Task</h1>
+            </div>
+            
+            <div class="nav-menu">
+                <div class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-server"></i>
+                        <span>Serveurs</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-header">
+                            <h3>Nos Jeux</h3>
+                            <p>Choisissez votre serveur</p>
+                        </div>
+                        <div class="dropdown-grid">
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-icon">
+                                    <i class="fas fa-gamepad"></i>
+                                </div>
+                                <div class="dropdown-text">
+                                    <h4>Minecraft Java</h4>
+                                    <p>Serveurs moddés & vanilla</p>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-icon">
+                                    <i class="fas fa-car"></i>
+                                </div>
+                                <div class="dropdown-text">
+                                    <h4>FiveM</h4>
+                                    <p>Serveurs GTA VI</p>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-icon">
+                                    <i class="fas fa-skull"></i>
+                                </div>
+                                <div class="dropdown-text">
+                                    <h4>V Rising</h4>
+                                    <p>Serveurs vampires</p>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-icon">
+                                    <i class="fas fa-user-ninja"></i>
+                                </div>
+                                <div class="dropdown-text">
+                                    <h4>SCUM</h4>
+                                    <p>Survie extrême</p>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-icon">
+                                    <i class="fas fa-hammer"></i>
+                                </div>
+                                <div class="dropdown-text">
+                                    <h4>Rust</h4>
+                                    <p>Construction & survie</p>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-icon">
+                                    <i class="fas fa-dragon"></i>
+                                </div>
+                                <div class="dropdown-text">
+                                    <h4>ARK</h4>
+                                    <p>Domptez les dinosaures</p>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item dropdown-more">
+                                <div class="dropdown-icon">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </div>
+                                <div class="dropdown-text">
+                                    <h4>Voir plus</h4>
+                                    <p>D'autres jeux disponibles</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-users"></i>
+                        <span>Communauté</span>
+                    </a>
+                </div>
+                
+
+                
+                <div class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-headset"></i>
+                        <span>Support</span>
+                    </a>
+                </div>
+                
+                <div class="nav-item">
+                    <a href="#contact" class="nav-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="nav-buttons">
+                <a href="#" class="btn btn-secondary">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>Se connecter</span>
+                </a>
+                <a href="#" class="btn btn-primary">
+                    <i class="fas fa-plus"></i>
+                    <span>Créer un serveur</span>
+                </a>
+            </div>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Game Showcase section -->
+    <section class="game-showcase">
+        <div class="game-container">
+            <div class="game-main">
+                <div class="game-featured">
+                    <div class="game-image">
+                        <img src="assets/Minecraft grandc.png" alt="Minecraft Java" id="main-game-image">
+                    </div>
+                    <div class="game-info">
+                        <h2 id="main-game-title">Minecraft Java</h2>
+                        <p id="main-game-description">Créez votre monde de blocs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="game-sidebar">
+                <div class="game-thumbnails">
+                                    <div class="game-thumbnail active" data-game="minecraft" data-image="assets/Minecraft grandc.png" data-title="Minecraft Java" data-description="Créez votre monde de blocs et explorez des univers infinis. Survie, construction et aventure dans un monde pixelisé unique." onclick="window.location.href='minecraft.html'">
+                    <img src="assets/minecraft.png" alt="Minecraft Java">
+                    <span>Minecraft Java</span>
+                </div>
+                    <div class="game-thumbnail" data-game="gta" data-image="assets/gta 6 grandc.png" data-title="GTA 6" data-description="Plongez dans un monde ouvert criminel époustouflant. Missions, courses et chaos urbain dans la ville de Los Santos.">
+                        <img src="assets/GTA FIVEM.png" alt="GTA 6">
+                        <span>GTA 6</span>
+                    </div>
+                    <div class="game-thumbnail" data-game="rust" data-image="assets/rust grandc.png" data-title="Rust" data-description="Survivez dans un monde hostile où chaque joueur est votre ennemi. Construisez, combattez et dominez l'île.">
+                        <img src="assets/rust.png" alt="Rust">
+                        <span>Rust</span>
+                    </div>
+                    <div class="game-thumbnail" data-game="ark" data-image="assets/ark grandc.png" data-title="ARK" data-description="Apprivoisez des dinosaures et survivez sur une île mystérieuse. Évolution, exploration et combat dans un monde préhistorique.">
+                        <img src="assets/ark.png" alt="ARK">
+                        <span>ARK</span>
+                    </div>
+                    <div class="game-thumbnail" data-game="vrising" data-image="assets/vrising grandc.png" data-title="V RISING" data-description="Devenez un vampire puissant dans un monde gothique. Survie, construction de château et domination nocturne.">
+                        <img src="assets/vrising.png" alt="V RISING">
+                        <span>V RISING</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <h2>Pourquoi choisir Task ?</h2>
+            
+            <!-- Stats Section -->
+            <div class="stats-section">
+                <div class="stat-item">
+                    <div class="stat-number">50,000+</div>
+                    <div class="stat-label">Joueurs Actifs</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">99.99%</div>
+                    <div class="stat-label">Uptime</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Jeux Supportés</div>
+                </div>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Performance Optimale</h3>
+                    <p>Serveurs haute performance avec une disponibilité de 99.99% et une latence ultra-faible</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Mondial</h3>
+                    <p>Centres de données stratégiquement répartis dans 12 pays pour une connexion optimale</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Sécurisé</h3>
+                    <p>Protection DDoS avancée, sauvegardes automatiques et chiffrement SSL</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Support 24/7</h3>
+                    <p>Équipe de support technique disponible à tout moment avec temps de réponse < 5min</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Déploiement Instantané</h3>
+                    <p>Votre serveur est opérationnel en moins de 2 minutes après la commande</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Configuration Avancée</h3>
+                    <p>Panel d'administration complet avec mods, plugins et personnalisation totale</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Carousel -->
+    <section class="games-carousel">
+        <div class="container">
+            <h2>Nos Jeux</h2>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="game-item">
+                        <img src="assets/minecraft.png" alt="Minecraft">
+                        <span>Minecraft</span>
+                    </div>
+                    <div class="game-item">
+                        <img src="assets/elden ring.png" alt="Elden Ring">
+                        <span>Elden Ring</span>
+                    </div>
+                    <div class="game-item">
+                        <img src="assets/red dead.png" alt="Red Dead Redemption">
+                        <span>Red Dead Redemption</span>
+                    </div>
+                    <div class="game-item">
+                        <img src="assets/frt.png" alt="FRT">
+                        <span>FRT</span>
+                    </div>
+                    <div class="game-item">
+                        <img src="assets/the.png" alt="THE">
+                        <span>THE</span>
+                    </div>
+                    <div class="game-item">
+                        <img src="assets/GTA FIVEM.png" alt="GTA 6">
+                        <span>GTA 6</span>
+                    </div>
+                    <div class="game-item">
+                        <img src="assets/rust.png" alt="Rust">
+                        <span>Rust</span>
+                    </div>
+                    <div class="game-item">
+                        <img src="assets/ark.png" alt="ARK">
+                        <span>ARK</span>
+                    </div>
+                    <div class="game-item">
+                        <img src="assets/bo2.png" alt="Black Ops 2">
+                        <span>Black Ops 2</span>
+                    </div>
+                    <div class="game-item">
+                        <img src="assets/bld.png" alt="BLD">
+                        <span>BLD</span>
+                    </div>
+                    <div class="game-item">
+                        <img src="assets/gtavc.png" alt="GTA Vice City">
+                        <span>GTA Vice City</span>
+                    </div>
+                    <div class="game-item">
+                        <img src="assets/hzd.png" alt="Horizon Zero Dawn">
+                        <span>Horizon Zero Dawn</span>
+                    </div>
+                    <div class="game-item">
+                        <img src="assets/hlg.png" alt="HLG">
+                        <span>HLG</span>
+                    </div>
+                    <div class="game-item">
+                        <img src="assets/skr.png" alt="SKR">
+                        <span>SKR</span>
+                    </div>
+                    <div class="game-item">
+                        <img src="assets/minecraft.png" alt="Minecraft">
+                        <span>Minecraft</span>
+                    </div>
+                    <div class="game-item">
+                        <img src="assets/elden ring.png" alt="Elden Ring">
+                        <span>Elden Ring</span>
+                    </div>
+                    <div class="game-item">
+                        <img src="assets/red dead.png" alt="Red Dead Redemption">
+                        <span>Red Dead Redemption</span>
+                    </div>
+                    <div class="game-item">
+                        <img src="assets/frt.png" alt="FRT">
+                        <span>FRT</span>
+                    </div>
+                    <div class="game-item">
+                        <img src="assets/the.png" alt="THE">
+                        <span>THE</span>
+                    </div>
+                    <div class="game-item">
+                        <img src="assets/GTA FIVEM.png" alt="GTA 6">
+                        <span>GTA 6</span>
+                    </div>
+                    <div class="game-item">
+                        <img src="assets/rust.png" alt="Rust">
+                        <span>Rust</span>
+                    </div>
+                    <div class="game-item">
+                        <img src="assets/ark.png" alt="ARK">
+                        <span>ARK</span>
+                    </div>
+                    <div class="game-item">
+                        <img src="assets/bo2.png" alt="Black Ops 2">
+                        <span>Black Ops 2</span>
+                    </div>
+                    <div class="game-item">
+                        <img src="assets/bld.png" alt="BLD">
+                        <span>BLD</span>
+                    </div>
+                    <div class="game-item">
+                        <img src="assets/gtavc.png" alt="GTA Vice City">
+                        <span>GTA Vice City</span>
+                    </div>
+                    <div class="game-item">
+                        <img src="assets/hzd.png" alt="Horizon Zero Dawn">
+                        <span>Horizon Zero Dawn</span>
+                    </div>
+                    <div class="game-item">
+                        <img src="assets/hlg.png" alt="HLG">
+                        <span>HLG</span>
+                    </div>
+                    <div class="game-item">
+                        <img src="assets/skr.png" alt="SKR">
+                        <span>SKR</span>
+                    </div>
+                </div>
+            </div>
+                                    <div class="carousel-button-container">
+                            <a href="decouvrir-plus.html" class="btn btn-discover">
+                                <span>Découvrir plus</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Témoignages Clients</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Excellent service ! Mon serveur Minecraft fonctionne parfaitement depuis des mois."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Jean Dupont</h4>
+                        <span>Joueur Minecraft</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Support client réactif et professionnel. Je recommande !"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Marie Martin</h4>
+                        <span>Administrateur SCUM</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Interface simple et intuitive. Parfait pour débuter !"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Pierre Durand</h4>
+                        <span>Joueur V Rising</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Prêt à créer votre serveur ?</h2>
+            <p>Rejoignez des milliers de joueurs qui font confiance à Task</p>
+            <a href="#" class="btn btn-primary btn-large">Commencer maintenant</a>
+        </div>
+    </section>
+
+    <!-- Articles -->
+    <section class="articles">
+        <div class="container">
+            <h2>Derniers Articles</h2>
+            <p>Restez informé des dernières actualités et guides pour optimiser votre expérience de jeu</p>
+            <div class="articles-grid">
+                <article class="article-card">
+                    <div class="article-image">
+                        <img src="assets/mc.png" alt="Minecraft Server Setup">
+                        <div class="article-category">Guide</div>
+                    </div>
+                    <div class="article-content">
+                        <h3>Comment configurer un serveur Minecraft optimal</h3>
+                        <p>Découvrez les meilleures pratiques pour configurer votre serveur Minecraft avec les plugins essentiels et les paramètres de performance recommandés.</p>
+                        <div class="article-meta">
+                            <span class="article-date">15 Mars 2025</span>
+                            <span class="article-read-time">5 min de lecture</span>
+                        </div>
+                        <a href="#" class="article-link">Lire l'article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-image">
+                        <img src="assets/rst.png" alt="Rust Server Management">
+                        <div class="article-category">Tutoriel</div>
+                    </div>
+                    <div class="article-content">
+                        <h3>Gestion avancée d'un serveur Rust</h3>
+                        <p>Apprenez à gérer efficacement votre serveur Rust avec les outils d'administration et les configurations de sécurité essentielles.</p>
+                        <div class="article-meta">
+                            <span class="article-date">12 Mars 2025</span>
+                            <span class="article-read-time">7 min de lecture</span>
+                        </div>
+                        <a href="#" class="article-link">Lire l'article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-image">
+                        <img src="assets/ark.png" alt="ARK Server Optimization">
+                        <div class="article-category">Optimisation</div>
+                    </div>
+                    <div class="article-content">
+                        <h3>Optimiser les performances de votre serveur ARK</h3>
+                        <p>Maximisez les performances de votre serveur ARK avec nos conseils d'optimisation et les meilleures configurations.</p>
+                        <div class="article-meta">
+                            <span class="article-date">10 Mars 2025</span>
+                            <span class="article-read-time">6 min de lecture</span>
+                        </div>
+                        <a href="#" class="article-link">Lire l'article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-image">
+                        <img src="assets/cmm.png" alt="Gaming Community">
+                        <div class="article-category">Communauté</div>
+                    </div>
+                    <div class="article-content">
+                        <h3>Créer une communauté de joueurs active</h3>
+                        <p>Développez une communauté de joueurs engagée avec nos conseils pour animer votre serveur et fidéliser vos joueurs.</p>
+                        <div class="article-meta">
+                            <span class="article-date">8 Mars 2025</span>
+                            <span class="article-read-time">4 min de lecture</span>
+                        </div>
+                        <a href="#" class="article-link">Lire l'article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+            <div class="articles-button-container">
+                <a href="#" class="btn btn-articles">
+                    <span>Voir tous les articles</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Contactez-nous</h2>
+                    <p>Notre équipe d'experts est disponible pour répondre à toutes vos questions sur l'hébergement de serveurs de jeux.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>support@taskgaming.com</p>
+                                <span>Réponse sous 2h</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Chat en direct</h3>
+                                <p>Disponible 24/7</p>
+                                <span>Support instantané</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Téléphone</h3>
+                                <p>+33 1 23 45 67 89</p>
+                                <span>Lun-Ven 9h-18h</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Statut des services</h3>
+                                <p>99.9% de disponibilité</p>
+                                <span>Vérifier l'état</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h3>Suivez-nous</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Envoyez-nous un message</h2>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Sujet *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Choisissez un sujet</option>
+                                <option value="support">Support technique</option>
+                                <option value="billing">Facturation</option>
+                                <option value="sales">Ventes</option>
+                                <option value="partnership">Partenariat</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="priority">Priorité</label>
+                            <select id="priority" name="priority">
+                                <option value="low">Basse</option>
+                                <option value="medium" selected>Moyenne</option>
+                                <option value="high">Haute</option>
+                                <option value="urgent">Urgente</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Décrivez votre problème ou votre demande..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" id="newsletter">
+                                <span class="checkmark"></span>
+                                Je souhaite recevoir les actualités Task Gaming
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Envoyer le message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Task</h3>
+                    <p>Hébergement de serveurs de jeu de confiance</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Jeux</h4>
+                    <ul>
+                        <li><a href="#">Minecraft</a></li>
+                        <li><a href="#">SCUM</a></li>
+                        <li><a href="#">FiveM</a></li>
+                        <li><a href="#">V Rising</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Guides</a></li>
+                        <li><a href="#">Actualités</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="#">Conditions générales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Task. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html> 

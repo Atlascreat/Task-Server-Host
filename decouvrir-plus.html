@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Découvrir Plus - Task Gaming</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>TASK</h1>
+            </div>
+            <ul class="nav-menu">
+            </ul>
+            <div class="nav-buttons">
+                <a href="#" class="btn btn-secondary">Se connecter</a>
+                <a href="#" class="btn btn-primary">Créer un serveur</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="discover-hero">
+        <div class="container">
+            <div class="discover-hero-content">
+                <h1>Découvrir Plus de Jeux</h1>
+                <p>Explorez notre collection complète de serveurs de jeux et trouvez votre prochaine aventure</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filters-container">
+                <div class="filter-group">
+                    <h3>Catégories</h3>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">
+                            <i class="fas fa-gamepad"></i>
+                            <span>Tous les jeux</span>
+                        </button>
+                        <button class="filter-btn" data-filter="pc">
+                            <i class="fas fa-desktop"></i>
+                            <span>Jeux PC</span>
+                        </button>
+                        <button class="filter-btn" data-filter="multi">
+                            <i class="fas fa-users"></i>
+                            <span>Multi-joueurs</span>
+                        </button>
+                        <button class="filter-btn" data-filter="survival">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Survie</span>
+                        </button>
+                        <button class="filter-btn" data-filter="creative">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>Créatif</span>
+                        </button>
+                        <button class="filter-btn" data-filter="action">
+                            <i class="fas fa-bolt"></i>
+                            <span>Action</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="search-container">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Rechercher un jeu..." id="game-search">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Grid Section -->
+    <section class="games-grid-section">
+        <div class="container">
+            <div class="games-grid" id="games-grid">
+                <!-- PC Games -->
+                <div class="game-card" data-category="pc multi" data-name="minecraft">
+                    <div class="game-card-image">
+                        <img src="assets/minecraft.png" alt="Minecraft">
+                        <div class="game-card-overlay">
+                            <div class="game-card-categories">
+                                <span class="category-tag">PC</span>
+                                <span class="category-tag">Multi</span>
+                                <span class="category-tag">Créatif</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card-content">
+                        <h3>Minecraft</h3>
+                        <p>Explorez, construisez et survivez dans un monde infini de blocs</p>
+                        <div class="game-card-stats">
+                            <span><i class="fas fa-users"></i> 50K+ joueurs</span>
+                            <span><i class="fas fa-clock"></i> 24/7</span>
+                        </div>
+                        <a href="minecraft.html" class="btn btn-primary">Découvrir</a>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="pc action" data-name="gta">
+                    <div class="game-card-image">
+                        <img src="assets/GTA FIVEM.png" alt="GTA 6">
+                        <div class="game-card-overlay">
+                            <div class="game-card-categories">
+                                <span class="category-tag">PC</span>
+                                <span class="category-tag">Action</span>
+                                <span class="category-tag">Multi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card-content">
+                        <h3>GTA 6</h3>
+                        <p>Plongez dans un monde ouvert criminel époustouflant</p>
+                        <div class="game-card-stats">
+                            <span><i class="fas fa-users"></i> 30K+ joueurs</span>
+                            <span><i class="fas fa-clock"></i> 24/7</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Découvrir</a>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="pc survival" data-name="rust">
+                    <div class="game-card-image">
+                        <img src="assets/rust.png" alt="Rust">
+                        <div class="game-card-overlay">
+                            <div class="game-card-categories">
+                                <span class="category-tag">PC</span>
+                                <span class="category-tag">Survie</span>
+                                <span class="category-tag">Multi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card-content">
+                        <h3>Rust</h3>
+                        <p>Survie extrême dans un monde hostile et compétitif</p>
+                        <div class="game-card-stats">
+                            <span><i class="fas fa-users"></i> 25K+ joueurs</span>
+                            <span><i class="fas fa-clock"></i> 24/7</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Découvrir</a>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="pc survival" data-name="ark">
+                    <div class="game-card-image">
+                        <img src="assets/ark.png" alt="ARK">
+                        <div class="game-card-overlay">
+                            <div class="game-card-categories">
+                                <span class="category-tag">PC</span>
+                                <span class="category-tag">Survie</span>
+                                <span class="category-tag">Multi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card-content">
+                        <h3>ARK</h3>
+                        <p>Domptez les dinosaures et survivez dans un monde préhistorique</p>
+                        <div class="game-card-stats">
+                            <span><i class="fas fa-users"></i> 20K+ joueurs</span>
+                            <span><i class="fas fa-clock"></i> 24/7</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Découvrir</a>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="pc survival" data-name="vrising">
+                    <div class="game-card-image">
+                        <img src="assets/vrising.png" alt="V Rising">
+                        <div class="game-card-overlay">
+                            <div class="game-card-categories">
+                                <span class="category-tag">PC</span>
+                                <span class="category-tag">Survie</span>
+                                <span class="category-tag">Action</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card-content">
+                        <h3>V Rising</h3>
+                        <p>Devenez un vampire puissant dans un monde gothique</p>
+                        <div class="game-card-stats">
+                            <span><i class="fas fa-users"></i> 15K+ joueurs</span>
+                            <span><i class="fas fa-clock"></i> 24/7</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Découvrir</a>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="pc survival" data-name="scum">
+                    <div class="game-card-image">
+                        <img src="assets/scum.png" alt="SCUM">
+                        <div class="game-card-overlay">
+                            <div class="game-card-categories">
+                                <span class="category-tag">PC</span>
+                                <span class="category-tag">Survie</span>
+                                <span class="category-tag">Multi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card-content">
+                        <h3>SCUM</h3>
+                        <p>Survie extrême avec un système de métabolisme réaliste</p>
+                        <div class="game-card-stats">
+                            <span><i class="fas fa-users"></i> 10K+ joueurs</span>
+                            <span><i class="fas fa-clock"></i> 24/7</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Découvrir</a>
+                    </div>
+                </div>
+
+                <!-- Additional Games -->
+                <div class="game-card" data-category="pc action" data-name="elden ring">
+                    <div class="game-card-image">
+                        <img src="assets/elden ring.png" alt="Elden Ring">
+                        <div class="game-card-overlay">
+                            <div class="game-card-categories">
+                                <span class="category-tag">PC</span>
+                                <span class="category-tag">Action</span>
+                                <span class="category-tag">RPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card-content">
+                        <h3>Elden Ring</h3>
+                        <p>Action-RPG épique dans un monde ouvert mystérieux</p>
+                        <div class="game-card-stats">
+                            <span><i class="fas fa-users"></i> 40K+ joueurs</span>
+                            <span><i class="fas fa-clock"></i> 24/7</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Découvrir</a>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="pc action" data-name="red dead">
+                    <div class="game-card-image">
+                        <img src="assets/red dead.png" alt="Red Dead Redemption">
+                        <div class="game-card-overlay">
+                            <div class="game-card-categories">
+                                <span class="category-tag">PC</span>
+                                <span class="category-tag">Action</span>
+                                <span class="category-tag">Western</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card-content">
+                        <h3>Red Dead Redemption</h3>
+                        <p>Aventure western dans l'Amérique de la fin du XIXe siècle</p>
+                        <div class="game-card-stats">
+                            <span><i class="fas fa-users"></i> 35K+ joueurs</span>
+                            <span><i class="fas fa-clock"></i> 24/7</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Découvrir</a>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="pc action" data-name="fortnite">
+                    <div class="game-card-image">
+                        <img src="assets/frt.png" alt="Fortnite">
+                        <div class="game-card-overlay">
+                            <div class="game-card-categories">
+                                <span class="category-tag">PC</span>
+                                <span class="category-tag">Action</span>
+                                <span class="category-tag">Multi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card-content">
+                        <h3>Fortnite</h3>
+                        <p>Battle royale épique avec construction et combat</p>
+                        <div class="game-card-stats">
+                            <span><i class="fas fa-users"></i> 8K+ joueurs</span>
+                            <span><i class="fas fa-clock"></i> 24/7</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Découvrir</a>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="pc action" data-name="the witcher 3">
+                    <div class="game-card-image">
+                        <img src="assets/the.png" alt="The Witcher 3">
+                        <div class="game-card-overlay">
+                            <div class="game-card-categories">
+                                <span class="category-tag">PC</span>
+                                <span class="category-tag">Action</span>
+                                <span class="category-tag">RPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card-content">
+                        <h3>The Witcher 3</h3>
+                        <p>RPG d'action dans un monde fantastique épique</p>
+                        <div class="game-card-stats">
+                            <span><i class="fas fa-users"></i> 12K+ joueurs</span>
+                            <span><i class="fas fa-clock"></i> 24/7</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Découvrir</a>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="pc action" data-name="bo2">
+                    <div class="game-card-image">
+                        <img src="assets/bo2.png" alt="Black Ops 2">
+                        <div class="game-card-overlay">
+                            <div class="game-card-categories">
+                                <span class="category-tag">PC</span>
+                                <span class="category-tag">Action</span>
+                                <span class="category-tag">FPS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card-content">
+                        <h3>Black Ops 2</h3>
+                        <p>FPS classique avec mode multijoueur intense</p>
+                        <div class="game-card-stats">
+                            <span><i class="fas fa-users"></i> 18K+ joueurs</span>
+                            <span><i class="fas fa-clock"></i> 24/7</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Découvrir</a>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="pc action" data-name="baldurs gate 3">
+                    <div class="game-card-image">
+                        <img src="assets/bld.png" alt="Baldur's Gate 3">
+                        <div class="game-card-overlay">
+                            <div class="game-card-categories">
+                                <span class="category-tag">PC</span>
+                                <span class="category-tag">Action</span>
+                                <span class="category-tag">RPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card-content">
+                        <h3>Baldur's Gate 3</h3>
+                        <p>RPG tactique basé sur D&D dans un univers fantastique</p>
+                        <div class="game-card-stats">
+                            <span><i class="fas fa-users"></i> 6K+ joueurs</span>
+                            <span><i class="fas fa-clock"></i> 24/7</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Découvrir</a>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="pc action" data-name="gtavc">
+                    <div class="game-card-image">
+                        <img src="gtavc.png" alt="GTA Vice City">
+                        <div class="game-card-overlay">
+                            <div class="game-card-categories">
+                                <span class="category-tag">PC</span>
+                                <span class="category-tag">Action</span>
+                                <span class="category-tag">Classic</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card-content">
+                        <h3>GTA Vice City</h3>
+                        <p>Classique des années 80 dans un monde ouvert</p>
+                        <div class="game-card-stats">
+                            <span><i class="fas fa-users"></i> 22K+ joueurs</span>
+                            <span><i class="fas fa-clock"></i> 24/7</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Découvrir</a>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="pc action" data-name="hzd">
+                    <div class="game-card-image">
+                        <img src="hzd.png" alt="Horizon Zero Dawn">
+                        <div class="game-card-overlay">
+                            <div class="game-card-categories">
+                                <span class="category-tag">PC</span>
+                                <span class="category-tag">Action</span>
+                                <span class="category-tag">RPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card-content">
+                        <h3>Horizon Zero Dawn</h3>
+                        <p>Action-RPG dans un monde post-apocalyptique</p>
+                        <div class="game-card-stats">
+                            <span><i class="fas fa-users"></i> 28K+ joueurs</span>
+                            <span><i class="fas fa-clock"></i> 24/7</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Découvrir</a>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="pc action" data-name="hogwarts legacy">
+                    <div class="game-card-image">
+                        <img src="hlg.png" alt="Hogwarts Legacy">
+                        <div class="game-card-overlay">
+                            <div class="game-card-categories">
+                                <span class="category-tag">PC</span>
+                                <span class="category-tag">Action</span>
+                                <span class="category-tag">RPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card-content">
+                        <h3>Hogwarts Legacy</h3>
+                        <p>RPG d'action dans l'univers magique d'Harry Potter</p>
+                        <div class="game-card-stats">
+                            <span><i class="fas fa-users"></i> 9K+ joueurs</span>
+                            <span><i class="fas fa-clock"></i> 24/7</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Découvrir</a>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="pc action" data-name="skyrim">
+                    <div class="game-card-image">
+                        <img src="skr.png" alt="Skyrim">
+                        <div class="game-card-overlay">
+                            <div class="game-card-categories">
+                                <span class="category-tag">PC</span>
+                                <span class="category-tag">Action</span>
+                                <span class="category-tag">RPG</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card-content">
+                        <h3>Skyrim</h3>
+                        <p>RPG d'action dans un monde ouvert fantastique</p>
+                        <div class="game-card-stats">
+                            <span><i class="fas fa-users"></i> 7K+ joueurs</span>
+                            <span><i class="fas fa-clock"></i> 24/7</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Découvrir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Task Gaming</h3>
+                    <p>Votre partenaire de confiance pour l'hébergement de serveurs de jeux. Performance, fiabilité et support 24/7.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Hébergement de serveurs</a></li>
+                        <li><a href="#">Support technique</a></li>
+                        <li><a href="#">Guides et tutoriels</a></li>
+                        <li><a href="#">API et outils</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Centre d'aide</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Statut des services</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Légal</h3>
+                    <ul>
+                        <li><a href="#">Conditions d'utilisation</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">RGPD</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Task Gaming. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="decouvrir-plus.js"></script>
+</body>
+</html> 
